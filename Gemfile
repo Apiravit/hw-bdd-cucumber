@@ -23,7 +23,7 @@ group :development, :test do
 
   gem 'pry'
   gem 'pry-byebug'
-  
+
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels' # some pre-fabbed step definitions  
   gem 'database_cleaner' # to clear Cucumber's test database between runs
@@ -32,6 +32,11 @@ group :development, :test do
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.3.6'
+  gem 'devise'
+  gem 'omniauth'
+  gem 'omniauth-google-oauth2'
+  gem "omniauth-rails_csrf_protection", "~> 1.0"
+  gem 'dotenv-rails'
 end
 
 group :production do
